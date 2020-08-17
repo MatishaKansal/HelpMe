@@ -1,8 +1,9 @@
-class Food{
+class Delivery{
     constructor(){
         this.input = createInput("Name");
         this.button = createButton("Submit");
-        this.address = createInput("Delivery Place");
+        this.button.style('color', 'hotPink');
+        this.address = createInput("Address");
         this.phone = createInput("Phone Number");
         this.title = createElement("h2");
         this.title.style('color', 'purple');
@@ -33,8 +34,9 @@ class Food{
             this.phone.hide();
             this.greeting.hide();
             this.title.hide();
-            end = new End();
-            end.display();
+            finish = new Finish();
+            finish.display();
         });
+        
     }
 }
